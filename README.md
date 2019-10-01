@@ -29,7 +29,7 @@ import Tabs from '@phoenixreisen/loader';
 m(Loader, { type: 'overlay', text: 'Daten werden geladen...' });
 
 // JSX
-<Loader type="overlay" text="Daten werden gelden..." />
+<Loader type="overlay" text="Daten werden geladen..." />
 ```
 
 ## Test

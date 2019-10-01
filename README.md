@@ -1,6 +1,6 @@
-# Phoenix Komponente
+# Phoenix Loader
 
-Phoenix Komponente.
+Ladeanzeige(n) für API-Abfragen oder ähnliches.
 
 Die Komponente ist Teil des [Phoenix Reisen Design-Systems](https://design-system.phoenixreisen.net).
 
@@ -9,31 +9,34 @@ Die Komponente ist Teil des [Phoenix Reisen Design-Systems](https://design-syste
 [Mithril](https://mithril.js.org/) wird benötigt.
 
 ```bash
-npm install --save-dev @phoenixreisen/...
+npm install --save-dev @phoenixreisen/loader
 ```
 
 ## Anwendung
 
 ```js
 // entweder CommonJS
-const Tabs = require('@phoenixreisen/...');
+const Tabs = require('@phoenixreisen/loader');
 
 // oder ES6+
-import Tabs from '@phoenixreisen/...';
+import Tabs from '@phoenixreisen/loader';
 ```
 
 #### Aufruf
 
 ```js
-// Hyperscript bzw. Javascript
-...
+// Hyperscript
+m(Loader, { type: 'overlay', text: 'Daten werden geladen...' });
+
+// JSX
+<Loader type="overlay" text="Daten werden gelden..." />
 ```
 
 ## Test
 
 ```bash
 npm install
-npm run test
+npm test
 ```
 
 ## Deployment

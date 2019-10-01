@@ -1,9 +1,9 @@
 {
-  "name": "@phoenixreisen/name",
+  "name": "@phoenixreisen/loader",
   "version": "0.0.1",
-  "description": "Tab-Komponente, um Content durch Tabs zu strukturieren.",
-  "homepage": "https://www.phoenixreisen.com",
-  "main": "dist/view.js",
+  "description": "Ladeanzeige(n) für API-Abfragen oder ähnliches.",
+  "homepage": "https://design-system.phoenixreisen.net",
+  "main": "dist/loader.view.js",
   "scripts": {
     "compile:js": "babel src --out-dir dist",
     "compile:scss": "npx sass --no-source-map ./src:./dist",
@@ -14,14 +14,13 @@
   },
   "author": "Phoenix Reisen <it@phoenixreisen.com>",
   "contributors": [
-    "Phoenix Reisen <it@phoenixreisen.com>",
     "Fabian Marcus <f.marcus@phoenixreisen.com>"
   ],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/phoenixreisen/loader.git"
   },
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "mithril": "^2.0.4"
   },

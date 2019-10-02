@@ -4,8 +4,8 @@ const Loader = {
 
         if(type && type === 'overlay') {
             return (
-                <article class="initial-loader-overlay">
-                    <p class="initial-loader-overlay__spinner">
+                <article class="loader-overlay">
+                    <p class="loader__spinner">
                         <i class={`fas ${iconname || 'fa-spinner'} fa-spin`}></i><br />
                         { text || 'Daten werden geladen...' }
                     </p>
@@ -13,11 +13,11 @@ const Loader = {
             );
         }
         return (
-            <article class="initial-loader">
-                <p class="initial-loader__spinner">
+            <article class="loader">
+                <p class="loader__spinner">
                     <i class={`fas ${iconname || 'fa-spinner'} fa-spin`}></i>
                 </p>
-                <p class="initial-loader__text">
+                <p class="loader__text">
                     { text || 'Daten werden geladen...' }
                 </p>
             </article>

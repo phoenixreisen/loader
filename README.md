@@ -26,9 +26,11 @@ import Tabs from '@phoenixreisen/loader';
 
 ```js
 // Hyperscript
+m(Loader);
 m(Loader, { type: 'overlay', text: 'Daten werden geladen...' });
 
 // JSX
+<Loader />
 <Loader type="overlay" text="Daten werden geladen..." />
 ```
 

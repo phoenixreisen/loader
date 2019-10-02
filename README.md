@@ -9,7 +9,7 @@ Die Komponente ist Teil des [Phoenix Reisen Design-Systems](https://design-syste
 [Mithril](https://mithril.js.org/) wird benötigt.
 
 ```bash
-npm install --save-dev @phoenixreisen/loader
+npm install --save @phoenixreisen/loader
 ```
 
 ## Anwendung

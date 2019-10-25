@@ -2,6 +2,7 @@
 .hgignore
 .gitignore
 package-lock.json
+test-setup.js
 
 .hg/
 .git/

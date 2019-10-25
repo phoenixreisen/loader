@@ -4,7 +4,7 @@ const Loader = {
 
         if(type && type === 'overlay') {
             return (
-                <article class="loader-overlay">
+                <article class="loader loader--overlay">
                     <p class="loader__spinner">
                         <i class={`fas ${iconname || 'fa-spinner'} fa-spin`}></i><br />
                         { text || 'Daten werden geladen...' }

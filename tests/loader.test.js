@@ -7,8 +7,8 @@ test.spec('Static Loader', () => {
     
     test('should have some default classes', () => {
         const Loader = mq(m(LoaderView));
-        test(Loader.should.have('.initial-loader')).equals(true);
-        test(Loader.should.have('.initial-loader__spinner')).equals(true);
+        test(Loader.should.have('.loader')).equals(true);
+        test(Loader.should.have('.loader__spinner')).equals(true);
         test(Loader.should.have('.fas.fa-spin')).equals(true);
     });
 
@@ -30,8 +30,8 @@ test.spec('Overlay Loader', () => {
 
     test('should have some default classes', () => {
         const Loader = mq(m(LoaderView, { type: "overlay" }));
-        test(Loader.should.have('.initial-loader-overlay')).equals(true);
-        test(Loader.should.have('.initial-loader-overlay__spinner')).equals(true);
+        test(Loader.should.have('.loader.loader--overlay')).equals(true);
+        test(Loader.should.have('.loader__spinner')).equals(true);
         test(Loader.should.have('.fas.fa-spin')).equals(true);
     });
     

@@ -16,10 +16,10 @@ npm install --save @phoenixreisen/loader
 
 ```js
 // entweder CommonJS
-const Tabs = require('@phoenixreisen/loader');
+const Loader = require('@phoenixreisen/loader');
 
 // oder ES6+
-import Tabs from '@phoenixreisen/loader';
+import Loader from '@phoenixreisen/loader';
 ```
 
 #### Aufruf

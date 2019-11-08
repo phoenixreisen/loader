@@ -1,8 +1,8 @@
 .babelrc
 .hgignore
 .gitignore
-package-lock.json
 test-setup.js
+package-lock.json
 
 .hg/
 .git/

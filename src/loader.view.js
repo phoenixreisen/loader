@@ -15,7 +15,7 @@ const Loader = {
         return (
             <article class="loader">
                 <p class="loader__spinner">
-                    <i class={`fas ${iconname || 'fa-spinner'} fa-spin`}></i>
+                    <i class={`${iconname || 'fab fa-cuttlefish'} fa-spin`}></i>
                 </p>
                 <p class="loader__text">
                     { text || 'Daten werden geladen...' }

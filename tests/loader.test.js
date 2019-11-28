@@ -9,13 +9,13 @@ test.spec('Static Loader', () => {
         const Loader = mq(m(LoaderView));
         test(Loader.should.have('.loader')).equals(true);
         test(Loader.should.have('.loader__spinner')).equals(true);
-        test(Loader.should.have('.fas.fa-spin')).equals(true);
+        test(Loader.should.have('.fab.fa-cuttlefish.fa-spin')).equals(true);
     });
 
     test('should have a default text', () => {
         const Loader = mq(m(LoaderView));
         test(Loader.should.contain('Daten werden geladen...')).equals(true);
-        test(Loader.should.have('.fa-spinner')).equals(true);
+        test(Loader.should.have('.fa-cuttlefish')).equals(true);
     });
 
     test('should show customized text & icon', () => {
@@ -38,7 +38,7 @@ test.spec('Overlay Loader', () => {
     test('should have a default text', () => {
         const Loader = mq(m(LoaderView));
         test(Loader.should.contain('Daten werden geladen...')).equals(true);
-        test(Loader.should.have('.fa-spinner')).equals(true);
+        test(Loader.should.have('.fa-cuttlefish')).equals(true);
     });
 
     test('should show customized text & icon', () => {

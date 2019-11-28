@@ -6,7 +6,7 @@ const Loader = {
             return (
                 <article class="loader loader--overlay">
                     <p class="loader__spinner">
-                        <i class={`fas ${iconname || 'fa-spinner'} fa-spin`}></i><br />
+                        <i class={`${iconname || 'fab fa-cuttlefish'} fa-spin`}></i><br />
                         { text || 'Daten werden geladen...' }
                     </p>
                 </article>

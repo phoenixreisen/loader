@@ -32,7 +32,7 @@ test.spec('Overlay Loader', () => {
         const Loader = mq(m(LoaderView, { type: "overlay" }));
         test(Loader.should.have('.loader.loader--overlay')).equals(true);
         test(Loader.should.have('.loader__spinner')).equals(true);
-        test(Loader.should.have('.fas.fa-spin')).equals(true);
+        test(Loader.should.have('.fab.fa-cuttlefish.fa-spin')).equals(true);
     });
 
     test('should have a default text', () => {

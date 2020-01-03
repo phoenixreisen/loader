@@ -3,14 +3,14 @@
   "version": "0.0.6",
   "description": "Ladeanzeige(n) für API-Abfragen oder ähnliches.",
   "homepage": "https://design-system.phoenixreisen.net",
-  "main": "dist/loader.view.js",
+  "main": "dist/loader.m.js",
+  "module": "src/loader.m.js",
   "scripts": {
-    "compile:js": "babel src --out-dir dist",
-    "compile:scss": "npx sass --no-source-map ./src:./dist",
-    "prepublish": "npm run compile:js && npm run compile:scss && npm test",
-    "pretest": "babel src --out-dir test",
     "test": "ospec --require ./test-setup.js",
-    "posttest": "del-cli test"
+    "compile:js": "npx babel ./src/ --out-dir ./dist/",
+    "compile:scss": "npx sass --no-source-map ./src:./dist",
+    "pretest": "del-cli ./dist && npm run compile:js && npm run compile:scss",
+    "prepublish": "npm test"
   },
   "author": "Phoenix Reisen <it@phoenixreisen.com>",
   "contributors": [

@@ -3,7 +3,7 @@ const mq = require("mithril-query");
 const test = require("ospec");
 
 test.spec('Static Loader', () => {
-    const LoaderView = require('../test/loader.view.js');
+    const LoaderView = require('../dist/loader.m.js').default;
 
     test('should have some default classes', () => {
         const Loader = mq(m(LoaderView));
@@ -26,7 +26,7 @@ test.spec('Static Loader', () => {
 });
 
 test.spec('Overlay Loader', () => {
-    const LoaderView = require('../test/loader.view.js');
+    const LoaderView = require('../dist/loader.m.js').default;
 
     test('should have some default classes', () => {
         const Loader = mq(m(LoaderView, { type: "overlay" }));

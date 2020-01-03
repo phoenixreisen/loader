@@ -1,4 +1,4 @@
-const Loader = {
+export const Loader = {
     view(vnode) {
         const { type, text, iconname } = vnode.attrs;
 
@@ -25,6 +25,4 @@ const Loader = {
     }
 };
 
-if(typeof module !== 'undefined') {
-    module.exports = Loader;
-}
+export default Loader;

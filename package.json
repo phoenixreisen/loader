@@ -5,7 +5,7 @@
   "homepage": "https://design-system.phoenixreisen.net",
   "main": "dist/loader.m.js",
   "types": "dist/loader.m.d.ts",
-  "module": "src/loader.m.ts",
+  "module": "src/loader.m.tsx",
   "scripts": {
     "test": "ospec --preload ./test-setup.ts",
     "compile:ts": "npx tsc --declaration && npx tsc --build tsconfig.json",

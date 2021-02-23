@@ -2,15 +2,19 @@
 
 import m from 'mithril';
 
-export interface ILoaderAttrs {
+//--- Types -----
+
+export interface Attrs {
     type?: string;
     text?: string;
     iconname?: string;
 };
 
-export const Loader: m.Component<ILoaderAttrs> = {
+//--- Component -----
 
-    view({attrs}: m.Vnode<ILoaderAttrs>) {
+export const Loader: m.Component<Attrs> = {
+
+    view({attrs}: m.Vnode<Attrs>) {
         const {type, text, iconname} = attrs;
 
         if(type && type === 'overlay') {
@@ -34,6 +38,6 @@ export const Loader: m.Component<ILoaderAttrs> = {
             </article>
         );
     }
-};
+} as any;
 
 export default Loader;

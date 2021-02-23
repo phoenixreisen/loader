@@ -1,6 +1,6 @@
 {
   "name": "@phoenixreisen/loader",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Ladeanzeige(n) für API-Abfragen oder ähnliches.",
   "homepage": "https://design-system.phoenixreisen.net",
   "main": "dist/loader.m.js",
